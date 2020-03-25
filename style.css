@@ -76,4 +76,5 @@ p {
   border: 3px solid #777777;
   padding: 25px;
   margin: 25px;
+  box-sizing: border-box;
 }
