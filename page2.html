@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonu Sai's Resume - Page 2</title>
+  </head>
+
+  <body class="withBorder">
+    <main>
+      <button class="switchMode" id="darkMode">Dark Mode</button>
+      <button class="switchMode" id="lightMode">Light Mode</button>
+
+      <h1>Projects</h1>
+      <button
+        class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"
+        id="expandProject"
+      >
+        <span class="material-icons">
+          expand_more
+        </span>
+      </button>
+      <div class="content" id="projectContent">
+        <h2>Fit-Tables</h2>
+        <p>
+          A Web App that generate time for educational institution using a
+          generic algorithams
+        </p>
+      </div>
+      <h2>CVSS</h2>
+      <p>CVSSS calcullator with a responsive UI</p>
+      <a class="pageLink" href="index.html">Page 1</a>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+      document
+        .querySelector("#expandProject")
+        .addEventListener("click", function() {
+          expand("projectContent");
+        });
+
+      document.querySelector("#darkMode").addEventListener("click", function() {
+        dark("dark");
+      });
+
+      document
+        .querySelector("#lightMode")
+        .addEventListener("click", function() {
+          light("dark");
+        });
+    </script>
+  </body>
+</html>
